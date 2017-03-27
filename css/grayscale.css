@@ -120,16 +120,13 @@ a:focus {
 .intro {
   display: table;
   width: 100%;
-  height: auto;
-  padding: 100px 0;
+  height: 100%;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/intro-bg.png) no-repeat bottom center scroll;
   background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size: 150%;
+  background-position: 92% 110%;
 }
 .intro .intro-body {
   display: table-cell;
@@ -141,10 +138,13 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .intro {
-    height: 100%;
-    padding: 0;
+    background-position: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
